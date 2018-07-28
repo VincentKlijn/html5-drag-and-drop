@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="HTML5 Drag and Drop Demo">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>HTML5 Drag and Drop Example: Rock - Paper - Scissors</title>
+	<!-- External stylesheet for this page -->
+    <link rel="stylesheet" type="text/css" href="css/rock-paper-scissors.css" />
+	<!-- External js library for Drag & Drop functionality -->
+    <script language="javascript" src="javascript/vkHTML5DragAndDropRPS.js"></script>
+</head>
+
+<body>
+
+	<!-- the outer container -->
+	<div id="content">
+
+		<h1>HTML5 Drag and Drop Example: Rock - Paper - Scissors</h1>
+
+		<!-- this paragraph holds the current status of the DnD operations -->
+		<p id="statusMessage" class="message" />
+
+		<!-- the inner container, holding the three images -->
+		<div id="columns">
+			<!-- each rps block holds an image and a footer -->
+			<div id="rps1" class="rps">
+				<img src="images/Rock.png" draggable="true" alt="Rock" />
+				<!-- according to html5 specs, this is the intended use of the footer tag -->
+				<footer>Rock</footer>
+			</div> <!-- END rps1 -->
+			<div id="rps2" class="rps">
+				<img src="images/Paper.png" draggable="true" alt="Paper" />
+				<footer>Paper</footer>
+			</div> <!-- END rps2 -->
+			<div id="rps3" class="rps">
+				<img src="images/Scissors.png" draggable="true" alt="Scissors" />
+				<footer>Scissors</footer>
+			</div> <!-- END rps3 -->
+		</div> <!-- END columns -->
+		
+		<!-- provide some space at the bottom -->
+		<p id="clear" />
+
+	</div> <!-- END content -->
+	
+</body>
+</html>
